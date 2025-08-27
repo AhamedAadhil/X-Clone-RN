@@ -2,7 +2,7 @@ import express from "express";
 import { ENV } from "./configs/env.js";
 import { connectDB } from "./configs/db.js";
 
-connectDB();
+await connectDB();
 
 const app = express();
 const PORT = ENV.PORT || 3000;

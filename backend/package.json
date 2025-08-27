@@ -1,0 +1,41 @@
+{
+  "name": "xclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhamedAadhil/X-Clone-RN.git"
+  },
+  "keywords": [
+    "react-native",
+    "RN",
+    "Expo",
+    "MERN",
+    "Mobile",
+    "App",
+    "Dev"
+  ],
+  "type": "module",
+  "author": "ahamed aathil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhamedAadhil/X-Clone-RN/issues"
+  },
+  "homepage": "https://github.com/AhamedAadhil/X-Clone-RN#readme",
+  "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.10",
+    "@arcjet/node": "^1.0.0-beta.10",
+    "@clerk/express": "^1.7.25",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "nodemon": "^3.1.10"
+  }
+}

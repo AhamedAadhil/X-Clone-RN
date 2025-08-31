@@ -37,6 +37,12 @@ app.use((err, req, res, next) => {
     .json({ error: err.message || "Internal Server Error", success: false });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// listed for local development
+if (ENV.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+// export for vercel
+export default app;

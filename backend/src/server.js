@@ -24,7 +24,7 @@ app.get("/api/users", userRoutes);
 app.get("/api/posts", postRoutes);
 
 // error handling middleware
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   console.error("Unhandled error:", err);
   res
     .status(500)

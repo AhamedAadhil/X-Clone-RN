@@ -15,6 +15,8 @@ export const createApiClient = (
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+    // 👇 Helps Arcjet classify my traffic as legit
+    config.headers["User-Agent"] = "X-Clone/1.0 (React Native)";
     return config;
   });
 
